@@ -19,6 +19,8 @@ class AppServiceProvider extends ServiceProvider
                 '10.0.2.2',
             ];
 
+            return true;
+
             //return collect($ipWhitelist)
         });
     }
