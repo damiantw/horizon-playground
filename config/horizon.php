@@ -42,6 +42,16 @@ return [
     */
 
     'environments' => [
+        'production' => [
+            'supervisor-1' => [
+                'connection' => 'redis',
+                'queue' => ['default'],
+                'balance' => 'auto',
+                'processes' => 10,
+                'tries' => 3,
+            ],
+        ],
+
         'local' => [
             'supervisor-1' => [
                 'connection' => 'redis',
